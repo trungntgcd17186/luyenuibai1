@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Overpass:ital,wght@1,100&display=swap');
+body {
+  font-family: 'Nunito';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.nav {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  color: #444b59;
+}
+
+.login-heading {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: #444b59;
+}
+
+.login-heading-description {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+  color: #444b59;
+  margin-top: 12px;
+}
+
+.login-label {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  color: #444b59;
+  margin-top: 64px;
+}
+
+.login-input {
+  height: 81px;
+  background: #ffffff;
+  border: 2px solid #789ade;
+  border-radius: 80px;
+  margin-top: 16px;
+  color: #c8d3f9;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+  padding-left: 32px;
+  padding-right: 35px;
+}
+
+.login-input .ant-input {
+  border-radius: 80px;
+  color: #c8d3f9;
+  letter-spacing: 0.3em;
+  font-size: 20px;
+}
+
+.login-input .anticon-eye-invisible {
+  color: #9eb0ea;
+}
+
+.password-mgt36 {
+  margin-top: 36px;
+}
+
+.login-remember-account {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: #444b59;
+}
+
+.login-forget-password {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: #8699da;
+}
+
+.sign-in-btn {
+  width: 100%;
+  height: 80px;
+  margin-top: 55px;
+  background: #8699da;
+  box-shadow: 4px 8px 12px rgba(78, 99, 141, 0.06),
+    inset 0px 4px 12px rgba(200, 211, 249, 0.6);
+  border-radius: 80px;
+
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.login-others {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: #444b59;
+  width: 80%;
+}
+.login-others:before {
+  content: '';
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+  margin-right: 8px;
+}
+.login-others:after {
+  content: '';
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+  margin-left: 8px;
+}
+
+.login-social-account-container {
+  width: 25%;
+  height: 80px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 2px solid #789ade;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.cursor {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-image {
+  position: absolute;
+  bottom: 15%;
+  right: 8.59%;
 }
