@@ -8,22 +8,16 @@ import GoogleIcon from './assets/images/google.svg';
 import FacebookIcon from './assets/images/facebook.svg';
 import AppleIcon from './assets/images/apple.svg';
 import BannerImage from './assets/images/BannerImage.svg';
-import Logo from './assets/images/Logo.svg';
 
 function App() {
   return (
     <div className='App'>
-      <Row justify='end'>
-        <Col
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginRight: '62px',
-            marginTop: '48px',
-          }}
-          span={8}
-        >
+      <Row>
+        <Col xs={2} sm={4} md={6} lg={8} xxl={2}></Col>
+        <Col className='col-logo-header' xs={2} sm={4} md={6} lg={8} xxl={13}>
+          <div className='logo-top-1600x1200'></div>
+        </Col>
+        <Col className='col-nav-container' xs={2} sm={4} md={6} lg={8} xxl={8}>
           <div className='nav cursor'>Help</div>
           <div className='nav cursor'>Contact us</div>
           <div className='nav cursor flex'>
@@ -33,16 +27,11 @@ function App() {
           <div className='nav cursor'>Sign Up</div>
           <img className='cursor' src={HomeIcon} alt='icon' />
         </Col>
+        <Col xs={2} sm={4} md={6} lg={8} xxl={1} />
       </Row>
       <Row>
-        <Col span={2}></Col>
-        <Col
-          style={{
-            paddingTop: '24px',
-            paddingBottom: '109px',
-          }}
-          span={8}
-        >
+        <Col md={12} lg={8} xxl={2}></Col>
+        <Col className='col-login-container' md={6} lg={8} xxl={8}>
           <div className='login-heading'>WELCOME BACK!</div>
           <div className='login-heading-description'>
             Don’t have a account,{' '}
@@ -109,18 +98,24 @@ function App() {
             </div>
           </div>
         </Col>
-        <Col span={1}></Col>
+        <Col md={6} lg={8} xxl={1}></Col>
         <Col
-          span={12}
+          md={6}
+          lg={8}
+          xxl={12}
           style={{
             paddingTop: '51px',
             position: 'relative',
           }}
         >
-          <img src={BannerImage} alt='banner' />
-          <img className='logo-image' src={Logo} alt='logo' />
+          <img
+            style={{ width: '100%', height: '100%' }}
+            src={BannerImage}
+            alt='banner'
+          />
+          <div className='logo-image'></div>
         </Col>
-        <Col span={1}></Col>
+        <Col md={6} lg={8} xxl={1}></Col>
       </Row>
     </div>
   );

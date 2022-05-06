@@ -139,8 +139,50 @@ body {
   cursor: pointer;
 }
 
-.logo-image {
-  position: absolute;
-  bottom: 15%;
-  right: 8.59%;
+.col-nav-container {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-login-container {
+  padding-top: 24px;
+  padding-bottom: 109px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .logo-image {
+    position: absolute;
+    bottom: 15%;
+    right: 8.59%;
+    background-image: url(./assets/images/Logo.svg);
+    width: 28%;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  .logo-top-1600x1200 {
+    background-image: url(./assets/images/Logo.svg);
+    width: 100%;
+    height: 28.27px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .col-logo-header {
+    padding-top: 60px;
+  }
+
+  .col-nav-container {
+    padding-top: 56px;
+  }
+
+  .col-login-container {
+    padding-top: 101px;
+    padding-bottom: 118px;
+  }
 }
