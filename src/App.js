@@ -37,7 +37,7 @@ function App() {
             Don’t have a account,{' '}
             <span
               className='cursor'
-              style={{ color: '#8699DA', fontWeight: '600' }}
+              style={{ color: '#8699DA', fontWeight: '700' }}
             >
               Sign up
             </span>
@@ -51,9 +51,13 @@ function App() {
 
           <div
             className='flex'
-            style={{ justifyContent: 'space-between', marginTop: '36px' }}
+            style={{
+              justifyContent: 'space-between',
+              marginTop: '36px',
+              alignItems: 'center',
+            }}
           >
-            <div className='flex'>
+            <div className='radio-container flex'>
               <Radio />
 
               <div className='login-remember-account'>Remember me</div>
